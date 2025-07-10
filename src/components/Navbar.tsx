@@ -73,8 +73,9 @@ const Navbar = () => {
           >
             Home
           </a>
-          <a href="#features" className="nav-link">About</a>
-          <a href="#details" className="nav-link">Contact</a>
+          <a href="#opensource" className="nav-link">Open Source</a>
+          <a href="#specifications" className="nav-link">Specifications</a>
+          <a href="#community" className="nav-link">Community</a>
         </nav>
 
         {/* Mobile menu button - increased touch target */}
@@ -106,24 +107,34 @@ const Navbar = () => {
             Home
           </a>
           <a 
-            href="#features" 
+            href="#opensource" 
             className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
-            About
+            Open Source
           </a>
           <a 
-            href="#details" 
+            href="#specifications" 
             className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
-            Contact
+            Specifications
+          </a>
+          <a 
+            href="#community" 
+            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            Community
           </a>
         </nav>
       </div>
